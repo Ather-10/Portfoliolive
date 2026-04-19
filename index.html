@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ather Usman</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="#home" class="nav-logo">Ather<span>.</span></a>
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#contact" class="nav-hire">Hire Me</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- OVERLAY -->
+<div class="drawer-overlay" id="drawer-overlay" onclick="closeMenu()"></div>
+
+<!-- SIDE DRAWER -->
+<div class="mobile-menu" id="mobile-menu">
+  <div class="drawer-header">
+    <span class="drawer-logo">Ather<span>.</span></span>
+    <div class="drawer-close" onclick="closeMenu()"><i class="fa-solid fa-xmark"></i></div>
+  </div>
+  <a href="#home" onclick="closeMenu()"><i class="fa-solid fa-house"></i> Home</a>
+  <a href="#about" onclick="closeMenu()"><i class="fa-solid fa-user"></i> About</a>
+  <a href="#services" onclick="closeMenu()"><i class="fa-solid fa-briefcase"></i> Services</a>
+  <a href="#projects" onclick="closeMenu()"><i class="fa-solid fa-folder-open"></i> Projects</a>
+  <a href="#contact" onclick="closeMenu()"><i class="fa-solid fa-envelope"></i> Contact</a>
+  <div class="drawer-footer">
+    <a href="#contact" class="drawer-hire" onclick="closeMenu()"><i class="fa-solid fa-paper-plane"></i> Hire Me</a>
+    <div class="drawer-available"><span class="dot"></span> Available for freelance work</div>
+  </div>
+</div>
+
+<!-- HERO -->
+<section id="home">
+  <div class="hero-glow"></div>
+  <div class="hero-inner">
+    <div class="hero-badge"><span class="dot"></span> Available for freelance work</div>
+    <div class="hero-title">Hello, I'm<br><span class="name">Ather Usman</span></div>
+    <div class="hero-sub"><span class="hero-typed" id="typed-text"></span><span class="cursor">|</span></div>
+    <p class="hero-desc">I build high-performing Shopify stores with custom Liquid themes, seamless app integrations, and conversion-focused e-commerce experiences.</p>
+    <div class="hero-btns">
+      <a href="#projects" class="btn-primary"><i class="fa-solid fa-briefcase"></i> View My Work</a>
+      <a href="#contact" class="btn-outline"><i class="fa-solid fa-envelope"></i> Hire Me</a>
+    </div>
+    <div class="hero-tags">
+      <span class="tag">Shopify</span><span class="tag">Liquid</span>
+      <span class="tag">React.js</span><span class="tag">JavaScript</span>
+      <span class="tag">Tailwind CSS</span><span class="tag">Storefront API</span>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" style="background:var(--bg2);">
+  <div class="section-label reveal">About Me</div>
+  <div class="section-title reveal">Who I Am &amp; What I Do</div>
+  <div class="divider reveal"></div>
+  <div class="about-grid">
+    <div class="about-photo-wrap reveal">
+      <img src="https://atherusman-reviews.netlify.app/images/ather1.jpg" alt="Ather Usman" class="about-photo"
+        onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"/>
+      <div class="about-photo-placeholder" style="display:none;"><i class="fa-solid fa-user"></i><span>Your Photo</span></div>
+    </div>
+    <div class="about-info reveal">
+      <p class="about-bio">I'm a Shopify and Frontend Developer with 2+ years of experience building custom e-commerce stores and responsive web interfaces. I specialize in Shopify theme development using Liquid — creating pixel-perfect designs that are fast, mobile-first, and optimized for conversions.</p>
+      <p class="about-bio">From custom theme builds and section development to third-party app integrations and store migrations, I help clients turn their ideas into high-performing online stores.</p>
+      <div class="about-details">
+        <div class="detail-row"><span class="detail-label">Name</span><span class="detail-val">Ather Usman</span></div>
+        <div class="detail-row"><span class="detail-label">Experience</span><span class="detail-val">2+ Years</span></div>
+        <div class="detail-row"><span class="detail-label">Location</span><span class="detail-val">Faisalabad, Pakistan</span></div>
+        <div class="detail-row"><span class="detail-label">Email</span><span class="detail-val">chatherusman05@gmail.com</span></div>
+        <div class="detail-row"><span class="detail-label">Specialty</span><span class="detail-val">Shopify Development</span></div>
+        <div class="detail-row"><span class="detail-label">Status</span><span class="detail-val" style="color:var(--green);">Available for Hire</span></div>
+      </div>
+      <div class="skill-category">Shopify Skills</div>
+      <div class="skills-grid">
+        <div class="skill-card"><div class="skill-name">Liquid Templating</div><div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div><div class="skill-pct">85%</div></div>
+        <div class="skill-card"><div class="skill-name">Shopify CLI & Dawn</div><div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div><div class="skill-pct">80%</div></div>
+        <div class="skill-card"><div class="skill-name">Sections & Blocks</div><div class="skill-bar"><div class="skill-fill" style="width:82%"></div></div><div class="skill-pct">82%</div></div>
+        <div class="skill-card"><div class="skill-name">Storefront API</div><div class="skill-bar"><div class="skill-fill" style="width:70%"></div></div><div class="skill-pct">70%</div></div>
+        <div class="skill-card"><div class="skill-name">Meta Pixel</div><div class="skill-bar"><div class="skill-fill" style="width:99%"></div></div><div class="skill-pct">99%</div></div>
+      </div>
+      <div class="skill-category">Frontend Skills</div>
+      <div class="skills-grid">
+        <div class="skill-card"><div class="skill-name">JavaScript</div><div class="skill-bar"><div class="skill-fill" style="width:90%"></div></div><div class="skill-pct">90%</div></div>
+        <div class="skill-card"><div class="skill-name">React.js</div><div class="skill-bar"><div class="skill-fill" style="width:75%"></div></div><div class="skill-pct">75%</div></div>
+        <div class="skill-card"><div class="skill-name">Tailwind CSS</div><div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div><div class="skill-pct">85%</div></div>
+        <div class="skill-card"><div class="skill-name">HTML & CSS</div><div class="skill-bar"><div class="skill-fill" style="width:95%"></div></div><div class="skill-pct">95%</div></div>
+      </div>
+      <a href="https://ather-10.github.io/resume/cv-s.pdf" class="btn-primary" style="width:fit-content;margin-top:0.5rem;" target="_blank">
+        <i class="fa-solid fa-download"></i> Download CV
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="section-label reveal">Services</div>
+  <div class="section-title reveal">What I Can Build <span>For You</span></div>
+  <div class="divider reveal"></div>
+  <div class="services-grid">
+    <div class="service-card reveal">
+      <div class="service-icon"><i class="fa-brands fa-shopify"></i></div>
+      <div class="service-title">Custom Shopify Theme Development</div>
+      <div class="service-desc">Building fully custom Shopify themes from scratch using Liquid, tailored to your brand — fast, mobile-first, and conversion-optimized.</div>
+      <div class="service-tags"><span class="service-tag">Liquid</span><span class="service-tag">Dawn Theme</span><span class="service-tag">Shopify CLI</span></div>
+    </div>
+    <div class="service-card reveal">
+      <div class="service-icon"><i class="fa-solid fa-puzzle-piece"></i></div>
+      <div class="service-title">Custom Sections & Blocks</div>
+      <div class="service-desc">Creating reusable, drag-and-drop Shopify sections and blocks so store owners can update their site without touching code.</div>
+      <div class="service-tags"><span class="service-tag">Sections</span><span class="service-tag">Blocks</span><span class="service-tag">Metafields</span></div>
+    </div>
+    <div class="service-card reveal">
+      <div class="service-icon"><i class="fa-solid fa-plug"></i></div>
+      <div class="service-title">App & API Integration</div>
+      <div class="service-desc">Integrating third-party apps, payment gateways, and Shopify's Storefront API to add powerful functionality to your store.</div>
+      <div class="service-tags"><span class="service-tag">Storefront API</span><span class="service-tag">REST API</span><span class="service-tag">Apps</span></div>
+    </div>
+    <div class="service-card reveal">
+      <div class="service-icon"><i class="fa-solid fa-arrow-right-arrow-left"></i></div>
+      <div class="service-title">Shopify Store Migration</div>
+      <div class="service-desc">Migrating stores from WooCommerce, Wix, or other platforms to Shopify — preserving products, customers, and SEO rankings.</div>
+      <div class="service-tags"><span class="service-tag">WooCommerce</span><span class="service-tag">Wix</span><span class="service-tag">SEO</span></div>
+    </div>
+    <div class="service-card reveal">
+      <div class="service-icon"><i class="fa-solid fa-gauge-high"></i></div>
+      <div class="service-title">Speed & Performance Optimization</div>
+      <div class="service-desc">Improving Shopify store load times through lazy loading, asset optimization, and code refactoring for better Core Web Vitals scores.</div>
+      <div class="service-tags"><span class="service-tag">Core Web Vitals</span><span class="service-tag">Lazy Load</span><span class="service-tag">GTmetrix</span></div>
+    </div>
+    <div class="service-card reveal">
+      <div class="service-icon"><i class="fa-brands fa-react"></i></div>
+      <div class="service-title">React.js Web Development</div>
+      <div class="service-desc">Building dynamic, high-performance web applications and dashboards using React.js with clean component architecture.</div>
+      <div class="service-tags"><span class="service-tag">React.js</span><span class="service-tag">Tailwind CSS</span><span class="service-tag">Vite</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" style="background:var(--bg2);">
+  <div class="section-label reveal">Projects</div>
+  <div class="section-title reveal">My Recent <span>Work</span></div>
+  <div class="divider reveal"></div>
+  <div class="filter-row">
+    <button class="filter-btn active" onclick="filterProjects('all',this)">All</button>
+    <button class="filter-btn" onclick="filterProjects('shopify',this)">Shopify</button>
+    <button class="filter-btn" onclick="filterProjects('react',this)">React</button>
+    <button class="filter-btn" onclick="filterProjects('web',this)">Web</button>
+  </div>
+  <div class="projects-grid" id="projects-grid">
+    <div class="project-card reveal" data-type="shopify">
+      <div class="project-img-placeholder"><i class="fa-brands fa-shopify"></i></div>
+      <div class="project-body">
+        <div class="project-type">Shopify</div>
+        <div class="project-title">Custom Shopify Store Theme</div>
+        <div class="project-desc">A fully custom Shopify theme built with Liquid, featuring custom sections, metafields, and mobile-first design. Replace with your real Shopify project.</div>
+        <div class="project-techs"><span class="project-tech">Liquid</span><span class="project-tech">Shopify CLI</span><span class="project-tech">Dawn</span><span class="project-tech">CSS</span></div>
+        <div class="project-links"><a href="https://ather-10.github.io/shopify-theme/" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a><a href="https://github.com/Ather-10/shopify-theme" class="project-link"><i class="fa-brands fa-github"></i> Code</a></div>
+      </div>
+    </div>
+    <div class="project-card reveal" data-type="react">
+      <img src="https://atherusman-reviews.netlify.app/images/devmatch.png" alt="DevMatch" class="project-img" onerror="this.style.display='none'"/>
+      <div class="project-body">
+        <div class="project-type">React</div>
+        <div class="project-title">DevMatch</div>
+        <div class="project-desc">A portfolio project that helps developers showcase their skills in a fun, swipe-based interface inspired by modern matching apps.</div>
+        <div class="project-techs"><span class="project-tech">Vite + React</span><span class="project-tech">Tailwind CSS</span><span class="project-tech">Local Storage</span></div>
+        <div class="project-links"><a href="https://devmatchpro.netlify.app/" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a><a href="https://github.com/Ather-10" class="project-link"><i class="fa-brands fa-github"></i> Code</a></div>
+      </div>
+    </div>
+    <div class="project-card reveal" data-type="react">
+      <img src="images/weather.pnj.png" alt="Weather App" class="project-img" onerror="this.style.display='none'"/>
+      <!-- <div class="project-img-placeholder"><i class="fa-solid fa-cloud-sun"></i></div> -->
+      <div class="project-body">
+        <div class="project-type">React</div>
+        <div class="project-title">Weather App</div>
+        <div class="project-desc">A real-time weather forecasting app using APIs to display location-based temperature, humidity, and conditions with a clean UI.</div>
+        <div class="project-techs"><span class="project-tech">React.js</span><span class="project-tech">Weather API</span><span class="project-tech">Bootstrap</span></div>
+        <div class="project-links"><a href="https://ather-10.github.io/my-weather-app/" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a><a href="https://github.com/Ather-10/my-weather-app" class="project-link"><i class="fa-brands fa-github"></i> Code</a></div>
+      </div>
+    </div>
+    <div class="project-card reveal" data-type="react">
+      <img src="https://atherusman-reviews.netlify.app/images/textutils.png" alt="TextUtils" class="project-img" onerror="this.style.display='none'"/>
+      <div class="project-body">
+        <div class="project-type">React</div>
+        <div class="project-title">TextUtils App</div>
+        <div class="project-desc">A web application providing various text manipulation tools such as case conversion, word count, and text formatting.</div>
+        <div class="project-techs"><span class="project-tech">React.js</span><span class="project-tech">Bootstrap</span><span class="project-tech">HTML</span></div>
+        <div class="project-links"><a href="https://ather-10.github.io/textutills-app/" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a><a href="https://github.com/Ather-10/textutills-app/" class="project-link"><i class="fa-brands fa-github"></i> Code</a></div>
+      </div>
+    </div>
+    <div class="project-card reveal" data-type="react">
+      <img src="https://atherusman-reviews.netlify.app/images/Todo.jpg" alt="Todo App" class="project-img" onerror="this.style.display='none'"/>
+      <div class="project-body">
+        <div class="project-type">React</div>
+        <div class="project-title">Todo App</div>
+        <div class="project-desc">A clean and efficient task management app to help organize tasks, set priorities, and boost productivity.</div>
+        <div class="project-techs"><span class="project-tech">React.js</span><span class="project-tech">Tailwind CSS</span></div>
+        <div class="project-links"><a href="https://ather-10.github.io/todo/" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a><a href="https://github.com/Ather-10/todo" class="project-link"><i class="fa-brands fa-github"></i> Code</a></div>
+      </div>
+    </div>
+    <div class="project-card reveal" data-type="react">
+      <img src="https://atherusman-reviews.netlify.app/images/joke.jpg" alt="Mast Joke" class="project-img" onerror="this.style.display='none'"/>
+      <div class="project-body">
+        <div class="project-type">React</div>
+        <div class="project-title">Mast Joke</div>
+        <div class="project-desc">A React + Vite app that fetches and displays random programming jokes using the JokeAPI.</div>
+        <div class="project-techs"><span class="project-tech">React.js</span><span class="project-tech">JokeAPI</span><span class="project-tech">Tailwind CSS</span></div>
+        <div class="project-links"><a href="https://ather-10.github.io/mastjoke/" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a><a href="https://github.com/Ather-10/mastjoke" class="project-link"><i class="fa-brands fa-github"></i> Code</a></div>
+      </div>
+    </div>
+    <div class="project-card reveal" data-type="web">
+      <img src="https://atherusman-reviews.netlify.app/images/skillrecoder.png" alt="SkillSprint" class="project-img" onerror="this.style.display='none'"/>
+      <div class="project-body">
+        <div class="project-type">Web</div>
+        <div class="project-title">SkillSprint App</div>
+        <div class="project-desc">A dynamic learning platform designed to boost tech skills through interactive challenges and progress tracking.</div>
+        <div class="project-techs"><span class="project-tech">HTML/CSS</span><span class="project-tech">JavaScript</span></div>
+        <div class="project-links"><a href="https://ather-10.github.io/test_demo/" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a><a href="https://github.com/Ather-10/test_demo" class="project-link"><i class="fa-brands fa-github"></i> Code</a></div>
+      </div>
+    </div>
+    <div class="project-card reveal" data-type="web">
+      <img src="https://atherusman-reviews.netlify.app/images/design.png" alt="Home Page Design" class="project-img" onerror="this.style.display='none'"/>
+      <div class="project-body">
+        <div class="project-type">Web</div>
+        <div class="project-title">Home Page Design</div>
+        <div class="project-desc">A modern, fully responsive website home page built to practice layout composition and design principles.</div>
+        <div class="project-techs"><span class="project-tech">HTML</span><span class="project-tech">CSS</span><span class="project-tech">JavaScript</span></div>
+        <div class="project-links"><a href="https://ather-10.github.io/comptaways/" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a><a href="https://github.com/Ather-10/comptaways" class="project-link"><i class="fa-brands fa-github"></i> Code</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-label reveal">Contact</div>
+  <div class="section-title reveal">Let's Work <span>Together</span></div>
+  <div class="divider reveal"></div>
+  <div class="contact-grid">
+    <div class="reveal">
+      <p style="color:var(--text2);margin-bottom:1.4rem;font-size:0.95rem;line-height:1.75;">
+        I'm currently available for freelance Shopify projects, theme customizations, and store builds. Feel free to reach out — I usually reply within 24 hours.
+      </p>
+      <div class="contact-info">
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+          <div><div class="contact-label">Email</div><div class="contact-val">chatherusman05@gmail.com</div></div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+          <div><div class="contact-label">Phone / WhatsApp</div><div class="contact-val">+92 346 1308105</div></div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+          <div><div class="contact-label">Location</div><div class="contact-val">Faisalabad, Pakistan</div></div>
+        </div>
+      </div>
+      <div class="social-row">
+        <a href="#" class="social-btn" title="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="#" class="social-btn" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://wa.me/923461308105" class="social-btn" title="WhatsApp" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="#" class="social-btn" title="Upwork"><i class="fa-solid fa-briefcase"></i></a>
+      </div>
+    </div>
+    <form class="contact-form reveal" id="contact-form" onsubmit="handleSubmit(event)">
+      <div class="form-group"><label class="form-label">Your Name</label><input type="text" name="from_name" class="form-input" placeholder="e.g. Ali Khan" required/></div>
+      <div class="form-group"><label class="form-label">Email Address</label><input type="email" name="reply_to" class="form-input" placeholder="you@example.com" required/></div>
+      <div class="form-group"><label class="form-label">Subject</label><input type="text" name="subject" class="form-input" placeholder="e.g. Shopify store customization"/></div>
+      <div class="form-group"><label class="form-label">Message</label><textarea class="form-textarea" name="message" placeholder="Tell me about your project..." required></textarea></div>
+      <button type="submit" class="form-submit" id="submit-btn"><i class="fa-solid fa-paper-plane"></i> Send Message</button>
+      <div id="form-status" style="font-size:0.85rem;margin-top:0.5rem;display:none;"></div>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 <span>Ather Usman</span>. All Rights Reserved. Built for great Shopify experiences.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
