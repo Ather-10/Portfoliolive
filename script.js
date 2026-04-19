@@ -38,15 +38,37 @@
   type();
 
   /* ── Filter ── */
+//   function filterProjects(type, btn) {
+//     document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));
+//     btn.classList.add('active');
+//     document.querySelectorAll('.project-card').forEach(card=>{
+//       card.style.display=(type==='all'||card.dataset.type===type)?'flex':'none';
+//     });
+//   }
+/* ── Filter (limit-aware) ── */
   function filterProjects(type, btn) {
-    document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
-    document.querySelectorAll('.project-card').forEach(card=>{
-      card.style.display=(type==='all'||card.dataset.type===type)?'flex':'none';
+    const allCards = document.querySelectorAll('#projects-grid .project-card');
+    let shown = 0;
+    allCards.forEach(card => {
+      const match = (type === 'all' || card.dataset.type === type);
+      if (match && shown < LIMIT) {
+        card.style.display = 'flex';
+        shown++;
+      } else {
+        card.style.display = 'none';
+      }
     });
   }
 
   /* ── Scroll Reveal ── */
+  /* ── Show only 6 projects, hide rest ── */
+  const allCards = document.querySelectorAll('#projects-grid .project-card');
+  const LIMIT = 8; // Show only first 8 projects by default
+  allCards.forEach((card, i) => {
+    if (i >= LIMIT) card.style.display = 'none';
+  });
   const obs = new IntersectionObserver(entries=>{
     entries.forEach(e=>{ if(e.isIntersecting) e.target.classList.add('visible'); });
   },{threshold:0.1});
