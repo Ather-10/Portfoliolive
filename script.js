@@ -25,7 +25,7 @@
   }
 
   /* ── Typing ── */
-  const roles = ['Shopify Developer','Liquid Theme Developer','Frontend Developer','React.js Developer'];
+  const roles = ['Shopify Developer', 'Liquid Theme Developer', 'Store Speed Optimizer', 'Shopify Migration Specialist'];
   let rIdx=0,cIdx=0,del=false;
   const typed = document.getElementById('typed-text');
   function type() {

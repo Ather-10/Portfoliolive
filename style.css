@@ -130,6 +130,10 @@
     .hero-title { font-family:var(--font-head); font-size:clamp(2.4rem,8vw,5rem); font-weight:800; line-height:1.08; letter-spacing:-0.02em; margin-bottom:0.5rem; }
     .hero-title .name { color:var(--accent2); }
     .hero-sub { font-family:var(--font-head); font-size:clamp(1rem,3vw,1.6rem); font-weight:500; color:var(--text2); margin-bottom:1.4rem; min-height:2.2em; }
+    /* hero proof + typed line */
+    .hero-proof { display:flex; flex-wrap:wrap; justify-content:center; gap:0.4rem 1.6rem; list-style:none; margin:0 0 1.6rem; color:var(--text2); font-size:0.86rem; }
+    .hero-proof li { display:flex; align-items:center; gap:8px; }
+    .hero-proof li::before { content:""; width:6px; height:6px; border-radius:50%; background:var(--accent2); }
     .hero-typed { color:var(--accent2); }
     .cursor { animation:blink 0.8s infinite; }
     @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0} }
@@ -151,6 +155,7 @@
     .hero-tags { display:flex; flex-wrap:wrap; gap:8px; justify-content:center; }
     .tag { background:var(--card); border:1px solid var(--border); color:var(--text2); padding:0.28rem 0.8rem; border-radius:6px; font-size:0.78rem; font-family:'Courier New',monospace; }
 
+    
     /* ── SECTIONS ── */
     section { padding:clamp(3rem,7vw,5rem) var(--pad); }
     .section-label { font-size:0.75rem; font-weight:600; letter-spacing:0.14em; text-transform:uppercase; color:var(--accent2); margin-bottom:0.5rem; }
@@ -170,15 +175,29 @@
     .detail-label { font-size:0.72rem; color:var(--text3); letter-spacing:0.06em; text-transform:uppercase; }
     .detail-val { font-size:0.9rem; color:var(--text); font-weight:500; }
 
+    /* process (a real sequence, so numbered) */
+    .process { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:1.1rem; list-style:none; counter-reset:step; margin-top:2rem; }
+    .process li { counter-increment:step; background:var(--card); border:1px solid var(--border); border-radius:var(--radius); padding:1.4rem; }
+    .process li::before { content:counter(step); display:flex; align-items:center; justify-content:center; width:30px; height:30px; border-radius:50%; background:rgba(91,106,240,0.14); color:var(--accent2); font-family:var(--font-head); font-weight:700; font-size:0.9rem; margin-bottom:0.9rem; }
+    .process h3 { font-family:var(--font-head); font-size:1rem; font-weight:600; margin-bottom:0.4rem; }
+    .process p { font-size:0.86rem; color:var(--text2); line-height:1.65; }
+
+
     /* ── SKILLS ── */
     .skill-category { font-size:0.7rem; font-weight:700; letter-spacing:0.1em; text-transform:uppercase; color:var(--accent2); margin:1.8rem 0 0.8rem; }
     .skills-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(170px,1fr)); gap:0.8rem; }
     .skill-card { background:var(--card); border:1px solid var(--border); border-radius:var(--radius-sm); padding:1rem 1.1rem; transition:border-color 0.2s,transform 0.2s; }
     .skill-card:hover { border-color:var(--border2); transform:translateY(-2px); }
     .skill-name { font-weight:500; font-size:0.87rem; margin-bottom:0.5rem; }
-    .skill-bar { height:4px; background:var(--bg3); border-radius:2px; overflow:hidden; }
-    .skill-fill { height:100%; border-radius:2px; background:linear-gradient(90deg,var(--accent3),var(--accent2)); }
-    .skill-pct { font-size:0.72rem; color:var(--text3); margin-top:0.3rem; text-align:right; }
+    .skill-bar { display: none; height:4px; background:var(--bg3); border-radius:2px; overflow:hidden; }
+    .skill-fill { display: none; height:100%; border-radius:2px; background:linear-gradient(90deg,var(--accent3),var(--accent2)); }
+    .skill-pct {  display: none; font-size:0.72rem; color:var(--text3); margin-top:0.3rem; text-align:right; }
+
+     /* about: tools as plain chips instead of % bars */
+    .chip-list { display:flex; flex-wrap:wrap; gap:8px; list-style:none; margin:0; }
+    .chip { background:var(--card); border:1px solid var(--border); color:var(--text); padding:0.3rem 0.8rem; border-radius:6px; font-size:0.82rem; }
+    .about-cv { align-self:flex-start; margin-top:1.4rem; }
+    .skill-category { margin:1.4rem 0 0.7rem; }
 
     /* ── SERVICES ── */
     .services-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(270px,1fr)); gap:1.1rem; margin-top:2rem; }

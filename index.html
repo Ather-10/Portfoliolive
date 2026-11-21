@@ -61,9 +61,14 @@
       <a href="#projects" class="btn-primary"><i class="fa-solid fa-briefcase"></i> View My Work</a>
       <a href="#contact" class="btn-outline"><i class="fa-solid fa-envelope"></i> Hire Me</a>
     </div>
+    <ul class="hero-proof">
+      <li>12 Shopify projects delivered</li>
+      <li>Gulf and global brands</li>
+      <li>Replies within 24 hours</li>
+    </ul>
     <div class="hero-tags">
       <span class="tag">Shopify</span><span class="tag">Liquid</span>
-      <span class="tag">E-Commerence</span><span class="tag">React.js</span>
+      <span class="tag">E-Commerence</span><span class="tag">Core Web Vitals</span>
       <span class="tag">UI/UX Design</span><span class="tag">Storefront API</span>
     </div>
   </div>
@@ -84,14 +89,19 @@
       <p class="about-bio">I'm a Shopify and Frontend Developer with 2+ years of experience building custom e-commerce stores and responsive web interfaces. I specialize in Shopify theme development using Liquid — creating pixel-perfect designs that are fast, mobile-first, and optimized for conversions.</p>
       <p class="about-bio">From custom theme builds and section development to third-party app integrations and store migrations, I help clients turn their ideas into high-performing online stores.</p>
       <div class="about-details">
-        <div class="detail-row"><span class="detail-label">Name</span><span class="detail-val">Ather Usman</span></div>
+        <!-- <div class="detail-row"><span class="detail-label">Name</span><span class="detail-val">Ather Usman</span></div> -->
         <div class="detail-row"><span class="detail-label">Experience</span><span class="detail-val">2+ Years</span></div>
-        <div class="detail-row"><span class="detail-label">Location</span><span class="detail-val">Faisalabad, Pakistan</span></div>
-        <div class="detail-row"><span class="detail-label">Email</span><span class="detail-val">chatherusman05@gmail.com</span></div>
+        <div class="detail-row"><span class="detail-label">Location</span><span class="detail-val">Pakistan</span></div>
+        <!-- <div class="detail-row"><span class="detail-label">Email</span><span class="detail-val">chatherusman05@gmail.com</span></div> -->
         <div class="detail-row"><span class="detail-label">Specialty</span><span class="detail-val">Shopify Development</span></div>
         <div class="detail-row"><span class="detail-label">Status</span><span class="detail-val" style="color:var(--green);">Available for Hire</span></div>
       </div>
-      <div class="skill-category">Shopify Skills</div>
+       <h3 class="skill-category">Shopify</h3>
+      <ul class="chip-list"><li class="chip">Liquid</li><li class="chip">Shopify CLI</li><li class="chip">Dawn</li><li class="chip">Sections &amp; blocks</li><li class="chip">Metafields</li><li class="chip">Storefront API</li><li class="chip">Meta Pixel</li></ul>
+      <h3 class="skill-category">Frontend</h3>
+      <ul class="chip-list"><li class="chip">HTML &amp; CSS</li><li class="chip">JavaScript</li><li class="chip">Tailwind CSS</li><li class="chip">React.js</li></ul>
+
+      <!-- <div class="skill-category">Shopify Skills</div>
       <div class="skills-grid">
         <div class="skill-card"><div class="skill-name">Liquid Templating</div><div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div><div class="skill-pct">85%</div></div>
         <div class="skill-card"><div class="skill-name">Shopify CLI & Dawn</div><div class="skill-bar"><div class="skill-fill" style="width:80%"></div></div><div class="skill-pct">80%</div></div>
@@ -105,7 +115,7 @@
         <div class="skill-card"><div class="skill-name">React.js</div><div class="skill-bar"><div class="skill-fill" style="width:75%"></div></div><div class="skill-pct">75%</div></div>
         <div class="skill-card"><div class="skill-name">Tailwind CSS</div><div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div><div class="skill-pct">85%</div></div>
         <div class="skill-card"><div class="skill-name">HTML & CSS</div><div class="skill-bar"><div class="skill-fill" style="width:95%"></div></div><div class="skill-pct">95%</div></div>
-      </div>
+      </div> -->
       <a href="https://ather-10.github.io/resume/cv-b.pdf" class="btn-primary" style="width:fit-content;margin-top:0.5rem;" target="_blank">
         <i class="fa-solid fa-download"></i> Download CV
       </a>
@@ -170,7 +180,23 @@
   </div>
 </section>
 
+<!-- PROCESS -->
+<section id="process" class="alt" aria-labelledby="process-title">
+  <p class="section-label reveal">Process</p>
+  <h2 class="section-title reveal" id="process-title">How we'll work together</h2>
+  <div class="divider reveal"></div>
+  <ol class="process">
+    <li class="reveal"><h3>Brief and plan</h3><p>We agree on goals, pages, features, timeline, and price before any code is written.</p></li>
+    <li class="reveal"><h3>Build</h3><p>I build your theme in Liquid with a preview link you can check along the way.</p></li>
+    <li class="reveal"><h3>Test</h3><p>Mobile layout, speed, and checkout are tested before launch.</p></li>
+    <li class="reveal"><h3>Launch and support</h3><p>I launch the store and stay available for fixes and updates.</p></li>
+  </ol>
+</section>
+
+
 <!-- PROJECTS -->
+<!-- VERIFY: the Shopify descriptions below were written from each store's screenshot.
+     Replace any that are wrong with what you actually built + one real result (speed score, sales, launch date). -->
 <section id="projects" style="background:var(--bg2);">
   <div class="section-label reveal">Projects</div>
   <div class="section-title reveal">My Recent <span>Work</span></div>
@@ -183,148 +209,137 @@
   </div>
   <div class="projects-grid" id="projects-grid">
     <div class="project-card reveal" data-type="shopify">
-      <img src="images/souqaltakhfeedhat.png" alt="Cafeley Shopify Theme" class="project-img" onerror="this.style.display='none'"/>
+      <img src="images/souqaltakhfeedhat.png" alt="Souq Al-Takhfeedhat Shopify store homepage" class="project-img" loading="lazy" onerror="this.style.display='none'"/>
       <div class="project-body">
         <div class="project-type">Shopify</div>
         <div class="project-title">Souq Al-Takhfeedhat</div>
-        <div class="project-desc">A fully custom Shopify theme built with Liquid, featuring custom sections, metafields, and mobile-first design. Replace with your real Shopify project.</div>
+        <div class="project-desc">Custom Liquid theme for a home-goods store, with a bold hero banner, Arabic-ready announcement bar and mobile-first layout.</div>
         <div class="project-techs"><span class="project-tech">Liquid</span><span class="project-tech">Shopify CLI</span><span class="project-tech">Apps</span><span class="project-tech">CSS</span></div>
         <div class="project-links"><a href="https://souqaltakhfeedhat.com/" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a></div>
       </div>
     </div>
     <div class="project-card reveal" data-type="shopify">
-      <img src="images/floryia.png" alt="Cafeley Shopify Theme" class="project-img" onerror="this.style.display='none'"/>
+      <img src="images/floryia.png" alt="Floriya Shopify store homepage" class="project-img" loading="lazy" onerror="this.style.display='none'"/>
       <div class="project-body">
         <div class="project-type">Shopify</div>
         <div class="project-title">Floriya</div>
-        <div class="project-desc">A fully custom Shopify theme built with Liquid, featuring custom sections, metafields, and mobile-first design. Replace with your real Shopify project.</div>
+        <div class="project-desc">Custom Liquid theme for a beauty-accessories store, with a soft editorial hero and mobile-first layout.</div>
         <div class="project-techs"><span class="project-tech">Liquid</span><span class="project-tech">Shopify CLI</span><span class="project-tech">Apps</span><span class="project-tech">CSS</span></div>
         <div class="project-links"><a href="https://thefloriya.com/" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a></div>
       </div>
     </div>
-     <div class="project-card reveal" data-type="shopify">
-      <img src="images/Manzaya.png" alt="Cafeley Shopify Theme" class="project-img" onerror="this.style.display='none'"/>
+    <div class="project-card reveal" data-type="shopify">
+      <img src="images/Manzaya.png" alt="Manzaya Shopify store homepage" class="project-img" loading="lazy" onerror="this.style.display='none'"/>
       <div class="project-body">
         <div class="project-type">Shopify</div>
         <div class="project-title">Manzaya</div>
-        <div class="project-desc">A fully custom Shopify theme built with Liquid, featuring custom sections, metafields, and mobile-first design. Replace with your real Shopify project.</div>
+        <div class="project-desc">Custom Liquid theme for a home-essentials store, with a bold teal hero, shipping and discount announcement bar, and mobile-first layout.</div>
         <div class="project-techs"><span class="project-tech">Liquid</span><span class="project-tech">Shopify CLI</span><span class="project-tech">Apps</span><span class="project-tech">CSS</span></div>
         <div class="project-links"><a href="https://www.manzaya.com/" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a></div>
       </div>
     </div>
-      <div class="project-card reveal" data-type="shopify">
-      <img src="images/bytepluse.png" alt="Cafeley Shopify Theme" class="project-img" onerror="this.style.display='none'"/>
+    <div class="project-card reveal" data-type="shopify">
+      <img src="images/bytepluse.png" alt="Bytepulse Shopify store homepage" class="project-img" loading="lazy" onerror="this.style.display='none'"/>
       <div class="project-body">
         <div class="project-type">Shopify</div>
-        <div class="project-title">Bytepluse</div>
-        <div class="project-desc">A fully custom Shopify theme built with Liquid, featuring custom sections, metafields, and mobile-first design. Replace with your real Shopify project.</div>
+        <div class="project-title">Bytepulse</div>
+        <div class="project-desc">Custom Liquid theme for a smart-gadgets store serving Saudi Arabia, with bilingual Arabic and English content.</div>
         <div class="project-techs"><span class="project-tech">Liquid</span><span class="project-tech">Shopify CLI</span><span class="project-tech">Apps</span><span class="project-tech">CSS</span></div>
         <div class="project-links"><a href="https://bytepulseksa.store/" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a></div>
       </div>
     </div>
-     <div class="project-card reveal" data-type="shopify">
-      <img src="images/redolto.png" alt="Cafeley Shopify Theme" class="project-img" onerror="this.style.display='none'"/>
+    <div class="project-card reveal" data-type="shopify">
+      <img src="images/redolto.png" alt="Redolto Shopify store homepage" class="project-img" loading="lazy" onerror="this.style.display='none'"/>
       <div class="project-body">
         <div class="project-type">Shopify</div>
         <div class="project-title">Redolto</div>
-        <div class="project-desc">A fully custom Shopify theme built with Liquid, featuring custom sections, metafields, and mobile-first design. Replace with your real Shopify project.</div>
+        <div class="project-desc">Custom Liquid theme for a home-accessories store, with a free-delivery bar and product-benefit icons in the hero.</div>
         <div class="project-techs"><span class="project-tech">Liquid</span><span class="project-tech">Shopify CLI</span><span class="project-tech">Apps</span><span class="project-tech">CSS</span></div>
         <div class="project-links"><a href="https://redolto.store/" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a></div>
       </div>
     </div>
-     <div class="project-card reveal" data-type="shopify">
-      <img src="images/redolto.png" alt="Cafeley Shopify Theme" class="project-img" onerror="this.style.display='none'"/>
-      <div class="project-body">
-        <div class="project-type">Shopify</div>
-        <div class="project-title">Redolto</div>
-        <div class="project-desc">A fully custom Shopify theme built with Liquid, featuring custom sections, metafields, and mobile-first design. Replace with your real Shopify project.</div>
-        <div class="project-techs"><span class="project-tech">Liquid</span><span class="project-tech">Shopify CLI</span><span class="project-tech">Apps</span><span class="project-tech">CSS</span></div>
-        <div class="project-links"><a href="https://redolto.store/" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a></div>
-      </div>
-    </div>
-     <div class="project-card reveal" data-type="shopify">
-      <img src="images/multigo.png" alt="Cafeley Shopify Theme" class="project-img" onerror="this.style.display='none'"/>
+    <div class="project-card reveal" data-type="shopify">
+      <img src="images/multigo.png" alt="Multigo Shopify store homepage" class="project-img" loading="lazy" onerror="this.style.display='none'"/>
       <div class="project-body">
         <div class="project-type">Shopify</div>
         <div class="project-title">Multigo</div>
-        <div class="project-desc">A fully custom Shopify theme built with Liquid, featuring custom sections, metafields, and mobile-first design. Replace with your real Shopify project.</div>
+        <div class="project-desc">Custom Liquid theme for a home-accessories store, with Arabic and English messaging and Cash on Delivery highlights.</div>
         <div class="project-techs"><span class="project-tech">Liquid</span><span class="project-tech">Shopify CLI</span><span class="project-tech">Apps</span><span class="project-tech">CSS</span></div>
         <div class="project-links"><a href="https://multigo.store/" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a></div>
       </div>
     </div>
     <div class="project-card reveal" data-type="shopify">
-      <img src="images/coffee.webp" alt="Cafeley Shopify Theme" class="project-img" onerror="this.style.display='none'"/>
-      <div class="project-body">
-        <div class="project-type">Shopify</div>
-        <div class="project-title">Cafeley Shopify Store Theme</div>
-        <div class="project-desc">A fully custom Shopify theme built with Liquid, featuring custom sections, metafields, and mobile-first design. Replace with your real Shopify project.(password:coffee)</div>
-        <div class="project-techs"><span class="project-tech">Liquid</span><span class="project-tech">Shopify CLI</span><span class="project-tech">Dawn</span><span class="project-tech">CSS</span></div>
-        <div class="project-links"><a href="https://cafeley.myshopify.com/" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a></div>
-      </div>
-    </div>
-    <div class="project-card reveal" data-type="shopify">
-      <img src="images/project-2.png" alt="Cafeley Shopify Theme" class="project-img" onerror="this.style.display='none'"/>
+      <img src="images/project-2.png" alt="Dar Al Jamaal Shopify store homepage" class="project-img" loading="lazy" onerror="this.style.display='none'"/>
       <div class="project-body">
         <div class="project-type">Shopify</div>
         <div class="project-title">Dar Al Jamaal</div>
-        <div class="project-desc">A fully custom Shopify theme built with Liquid, featuring custom sections, metafields, and mobile-first design. Replace with your real Shopify project.</div>
+        <div class="project-desc">Custom Liquid theme for a home-styling and decor store, with a clean editorial hero and mobile-first layout.</div>
         <div class="project-techs"><span class="project-tech">Liquid</span><span class="project-tech">Shopify CLI</span><span class="project-tech">Apps</span><span class="project-tech">CSS</span></div>
         <div class="project-links"><a href="https://daraljamaal.com/" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a></div>
       </div>
     </div>
-     <div class="project-card reveal" data-type="shopify">
-      <img src="images/gultexh.png" alt="Cafeley Shopify Theme" class="project-img" onerror="this.style.display='none'"/>
+    <div class="project-card reveal" data-type="shopify">
+      <img src="images/gultexh.png" alt="GulfTech Shopify store homepage" class="project-img" loading="lazy" onerror="this.style.display='none'"/>
       <div class="project-body">
         <div class="project-type">Shopify</div>
         <div class="project-title">GulfTech</div>
-        <div class="project-desc">A fully custom Shopify theme built with Liquid, featuring custom sections, metafields, and mobile-first design. Replace with your real Shopify project.</div>
+        <div class="project-desc">Custom Liquid theme for a tech-accessories store serving the Gulf (GCC) market, built mobile-first.</div>
         <div class="project-techs"><span class="project-tech">Liquid</span><span class="project-tech">Shopify CLI</span><span class="project-tech">Apps</span><span class="project-tech">CSS</span></div>
         <div class="project-links"><a href="https://gulftech-gcc.shop/" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a></div>
       </div>
     </div>
-     <div class="project-card reveal" data-type="shopify">
-      <img src="images/zevani.png" alt="Cafeley Shopify Theme" class="project-img" onerror="this.style.display='none'"/>
+    <div class="project-card reveal" data-type="shopify">
+      <img src="images/zevani.png" alt="Zevani Shopify store homepage" class="project-img" loading="lazy" onerror="this.style.display='none'"/>
       <div class="project-body">
         <div class="project-type">Shopify</div>
         <div class="project-title">Zevani</div>
-        <div class="project-desc">A fully custom Shopify theme built with Liquid, featuring custom sections, metafields, and mobile-first design. Replace with your real Shopify project.</div>
+        <div class="project-desc">Custom Liquid theme for a home-appliance store, with a full-width hero banner and clean navigation.</div>
         <div class="project-techs"><span class="project-tech">Liquid</span><span class="project-tech">Shopify CLI</span><span class="project-tech">Apps</span><span class="project-tech">CSS</span></div>
         <div class="project-links"><a href="https://zevani.store/" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a></div>
       </div>
     </div>
-     <div class="project-card reveal" data-type="shopify">
-      <img src="images/nosteria.png" alt="Cafeley Shopify Theme" class="project-img" onerror="this.style.display='none'"/>
+    <div class="project-card reveal" data-type="shopify">
+      <img src="images/nosteria.png" alt="Novexa Shopify store homepage" class="project-img" loading="lazy" onerror="this.style.display='none'"/>
       <div class="project-body">
         <div class="project-type">Shopify</div>
         <div class="project-title">Novexa</div>
-        <div class="project-desc">A fully custom Shopify theme built with Liquid, featuring custom sections, metafields, and mobile-first design. Replace with your real Shopify project.</div>
+        <div class="project-desc">Custom Liquid theme for a tech-gadgets and home-appliance store, with category shortcuts in the hero.</div>
         <div class="project-techs"><span class="project-tech">Liquid</span><span class="project-tech">Shopify CLI</span><span class="project-tech">Apps</span><span class="project-tech">CSS</span></div>
         <div class="project-links"><a href="https://shopnovexa.store/" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a></div>
       </div>
     </div>
-     <div class="project-card reveal" data-type="shopify">
-      <img src="images/nestoraa.png" alt="Cafeley Shopify Theme" class="project-img" onerror="this.style.display='none'"/>
+    <div class="project-card reveal" data-type="shopify">
+      <img src="images/nestoraa.png" alt="Nestora Shopify store homepage" class="project-img" loading="lazy" onerror="this.style.display='none'"/>
       <div class="project-body">
         <div class="project-type">Shopify</div>
         <div class="project-title">Nestora</div>
-        <div class="project-desc">A fully custom Shopify theme built with Liquid, featuring custom sections, metafields, and mobile-first design. Replace with your real Shopify project.</div>
+        <div class="project-desc">Custom Liquid theme for a home-appliance store, with Arabic and English content and offer banners.</div>
         <div class="project-techs"><span class="project-tech">Liquid</span><span class="project-tech">Shopify CLI</span><span class="project-tech">Apps</span><span class="project-tech">CSS</span></div>
         <div class="project-links"><a href="https://nestorashop.biz/" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a></div>
       </div>
     </div>
+    <div class="project-card reveal" data-type="shopify">
+      <img src="images/coffee.webp" alt="Cafeley coffee-shop theme homepage" class="project-img" loading="lazy" onerror="this.style.display='none'"/>
+      <div class="project-body">
+        <div class="project-type">Shopify</div>
+        <div class="project-title">Cafeley Shopify Store Theme</div>
+        <div class="project-desc">Demo theme for a coffee-shop store, built on Dawn. Storefront password: coffee.</div>
+        <div class="project-techs"><span class="project-tech">Liquid</span><span class="project-tech">Shopify CLI</span><span class="project-tech">Dawn</span><span class="project-tech">CSS</span></div>
+        <div class="project-links"><a href="https://cafeley.myshopify.com/" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a></div>
+      </div>
+    </div>
     <div class="project-card reveal" data-type="react">
-      <img src="images/devmatch.png" alt="DevMatch" class="project-img" onerror="this.style.display='none'"/>
+      <img src="images/devmatch.png" alt="DevMatch app screenshot" class="project-img" loading="lazy" onerror="this.style.display='none'"/>
       <div class="project-body">
         <div class="project-type">React</div>
         <div class="project-title">DevMatch</div>
         <div class="project-desc">A portfolio project that helps developers showcase their skills in a fun, swipe-based interface inspired by modern matching apps.</div>
         <div class="project-techs"><span class="project-tech">Vite + React</span><span class="project-tech">Tailwind CSS</span><span class="project-tech">Local Storage</span></div>
-        <div class="project-links"><a href="https://devmatchpro.netlify.app/" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a><a href="https://github.com/Ather-10" class="project-link"><i class="fa-brands fa-github"></i> Code</a></div>
+        <div class="project-links"><a href="https://devmatchpro.netlify.app/" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a><a href="https://github.com/Ather-10/devmatch" class="project-link"><i class="fa-brands fa-github"></i> Code</a></div>
       </div>
     </div>
     <div class="project-card reveal" data-type="react">
-      <img src="images/weather.pnj.png" alt="Weather App" class="project-img" onerror="this.style.display='none'"/>
-      <!-- <div class="project-img-placeholder"><i class="fa-solid fa-cloud-sun"></i></div> -->
+      <img src="images/weather.pnj.png" alt="Weather App screenshot" class="project-img" loading="lazy" onerror="this.style.display='none'"/>
       <div class="project-body">
         <div class="project-type">React</div>
         <div class="project-title">Weather App</div>
@@ -334,7 +349,7 @@
       </div>
     </div>
     <div class="project-card reveal" data-type="react">
-      <img src="images/textutils.png" alt="TextUtils" class="project-img" onerror="this.style.display='none'"/>
+      <img src="images/textutils.png" alt="TextUtils app screenshot" class="project-img" loading="lazy" onerror="this.style.display='none'"/>
       <div class="project-body">
         <div class="project-type">React</div>
         <div class="project-title">TextUtils App</div>
@@ -344,7 +359,7 @@
       </div>
     </div>
     <div class="project-card reveal" data-type="react">
-      <img src="images/Todo.jpg" alt="Todo App" class="project-img" onerror="this.style.display='none'"/>
+      <img src="images/Todo.jpg" alt="Todo App screenshot" class="project-img" loading="lazy" onerror="this.style.display='none'"/>
       <div class="project-body">
         <div class="project-type">React</div>
         <div class="project-title">Todo App</div>
@@ -354,7 +369,7 @@
       </div>
     </div>
     <div class="project-card reveal" data-type="react">
-      <img src="images/joke.jpg" alt="Mast Joke" class="project-img" onerror="this.style.display='none'"/>
+      <img src="images/joke.jpg" alt="Mast Joke app screenshot" class="project-img" loading="lazy" onerror="this.style.display='none'"/>
       <div class="project-body">
         <div class="project-type">React</div>
         <div class="project-title">Mast Joke</div>
@@ -364,7 +379,7 @@
       </div>
     </div>
     <div class="project-card reveal" data-type="web">
-      <img src="images/skillrecoder.png" alt="SkillSprint" class="project-img" onerror="this.style.display='none'"/>
+      <img src="images/skillrecoder.png" alt="SkillSprint learning platform screenshot" class="project-img" loading="lazy" onerror="this.style.display='none'"/>
       <div class="project-body">
         <div class="project-type">Web</div>
         <div class="project-title">SkillSprint App</div>
@@ -374,7 +389,7 @@
       </div>
     </div>
     <div class="project-card reveal" data-type="web">
-      <img src="images/design.png" alt="Home Page Design" class="project-img" onerror="this.style.display='none'"/>
+      <img src="images/design.png" alt="Responsive home page design screenshot" class="project-img" loading="lazy" onerror="this.style.display='none'"/>
       <div class="project-body">
         <div class="project-type">Web</div>
         <div class="project-title">Home Page Design</div>
@@ -384,10 +399,10 @@
       </div>
     </div>
   </div>
-   <!-- SEE MORE BUTTON — centered below the 6 cards -->
+  <!-- SEE MORE BUTTON: centered below the project cards -->
   <div style="text-align:center; margin-top:2.5rem;">
     <a href="project.html" class="btn-primary" style="display:inline-flex;">
-      <i class="fa-solid fa-grid-2"></i> See All Projects
+      <i class="fa-solid fa-table-cells-large"></i> See All Projects
     </a>
   </div>
 </section>
@@ -413,7 +428,7 @@
         </div>
         <div class="contact-item">
           <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
-          <div><div class="contact-label">Location</div><div class="contact-val">Faisalabad, Pakistan</div></div>
+          <div><div class="contact-label">Location</div><div class="contact-val">Pakistan</div></div>
         </div>
       </div>
       <div class="social-row">
@@ -427,7 +442,7 @@
       <div class="form-group"><label class="form-label">Your Name</label><input type="text" name="from_name" class="form-input" placeholder="e.g. Ali Khan" required/></div>
       <div class="form-group"><label class="form-label">Email Address</label><input type="email" name="reply_to" class="form-input" placeholder="you@example.com" required/></div>
       <div class="form-group"><label class="form-label">Subject</label><input type="text" name="subject" class="form-input" placeholder="e.g. Shopify store customization"/></div>
-      <div class="form-group"><label class="form-label">Message</label><textarea class="form-textarea" name="message" placeholder="Tell me about your project..." required></textarea></div>
+      <div class="form-group"><label class="form-label">Message</label><textarea class="form-textarea" name="message" placeholder="Tell me about your project: store URL, what you need, and your timeline." required></textarea></div>
       <button type="submit" class="form-submit" id="submit-btn"><i class="fa-solid fa-paper-plane"></i> Send Message</button>
       <div id="form-status" style="font-size:0.85rem;margin-top:0.5rem;display:none;"></div>
     </form>
@@ -436,7 +451,7 @@
 
 <!-- FOOTER -->
 <footer>
-  <p>© 2026 <span>Ather Usman</span>. All Rights Reserved. Built for great Shopify experiences.</p>
+  <p>© 2026 <span>Ather Usman</span>. All Rights Reserved.</p>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
